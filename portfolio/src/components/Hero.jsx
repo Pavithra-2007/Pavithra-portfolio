@@ -103,9 +103,6 @@ export default function Hero() {
                   }}
                   className="h-full w-full object-cover"
                 />
-                <span className="absolute font-display text-6xl font-bold text-ink/10 select-none">
-                  PM
-                </span>
               </div>
 
               {/* Play-button-inspired accent badge */}
