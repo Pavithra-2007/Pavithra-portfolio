@@ -119,11 +119,12 @@ export const experience = [
 export const projects = [
   {
     title: 'AI Resume Analyzer',
+    image:'/ai-resume.png',
     description:
       'A tool that reviews resumes against job descriptions and surfaces concrete, actionable feedback — helping applicants understand exactly where to improve.',
     stack: ['React', 'Python', 'AI/NLP'],
     github: 'https://github.com/Pavithra-2007',
-    demo: '',
+    demo: 'https://resume-analyser-67srvytehvvpsttzjmkbzz.streamlit.app/',
   },
   {
     title: 'Visitors Management System',
