@@ -155,10 +155,27 @@ export const projects = [
 ]
 
 export const certificates = [
-  { title: 'Certificate', issuer: 'Add issuer name', year: '2025' },
-  { title: 'Certificate', issuer: 'Add issuer name', year: '2025' },
-  { title: 'Certificate', issuer: 'Add issuer name', year: '2024' },
-  { title: 'Certificate', issuer: 'Add issuer name', year: '2024' },
+  {
+    title: 'Database Management System Part-1',
+    image:'/infosysdbms.png',
+    issuer: 'Infosys',
+    year: '2026',
+  },
+  {
+    title: 'React Basics Certificate',
+    issuer: 'Meta',
+    year: '2025',
+  },
+  {
+    title: 'Java Programming Certificate',
+    issuer: 'Oracle',
+    year: '2024',
+  },
+  {
+    title: 'Web Development Certificate',
+    issuer: 'freeCodeCamp',
+    year: '2024',
+  },
 ]
 
 export const achievements = [
