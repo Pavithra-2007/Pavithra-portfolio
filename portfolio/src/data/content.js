@@ -139,7 +139,7 @@ export const projects = [
       'A simulated ATM application demonstrating secure transaction flows, balance management, and PIN-based authentication logic.',
     stack: ['Java', 'OOP'],
     github: 'https://github.com/Pavithra-2007',
-    demo: '',
+    demo: 'https://model-atm.vercel.app/',
   },
   {
     title: 'Age Calculator',
