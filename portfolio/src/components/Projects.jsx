@@ -14,6 +14,7 @@ export default function Projects() {
         <div className="mt-16 flex flex-col gap-20 md:gap-28">
           {projects.map((project, i) => {
             const reversed = i % 2 === 1
+
             return (
               <Reveal key={project.title} delay={80}>
                 <div
@@ -21,24 +22,31 @@ export default function Projects() {
                     reversed ? 'md:[direction:rtl]' : ''
                   }`}
                 >
-                  <div style={{ direction: 'ltr' }} className="group relative">
-                    <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-mist to-white border border-line overflow-hidden flex items-center justify-center transition-transform duration-500 group-hover:-translate-y-1.5">
-                      <span className="font-display text-4xl md:text-5xl font-bold text-ink/10 select-none px-8 text-center">
-                        {project.title}
-                      </span>
+                  {/* IMAGE (replaced block) */}
+                  <div style={{ direction: "ltr" }} className="group relative">
+                    <div className="overflow-hidden rounded-2xl border border-gray-200 shadow-lg bg-white">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
                     </div>
                   </div>
 
+                  {/* CONTENT */}
                   <div style={{ direction: 'ltr' }}>
                     <p className="text-[13px] font-semibold uppercase tracking-[0.16em] text-accent mb-3">
                       Project {String(i + 1).padStart(2, '0')}
                     </p>
+
                     <h3 className="font-display text-2xl md:text-3xl font-bold text-ink tracking-tight">
                       {project.title}
                     </h3>
+
                     <p className="mt-4 text-[15.5px] leading-relaxed text-slate max-w-md">
                       {project.description}
                     </p>
+
                     <div className="mt-5 flex flex-wrap gap-2">
                       {project.stack.map((tech) => (
                         <span
@@ -49,6 +57,7 @@ export default function Projects() {
                         </span>
                       ))}
                     </div>
+
                     <div className="mt-7 flex items-center gap-3">
                       <a
                         href={project.github}
@@ -59,6 +68,7 @@ export default function Projects() {
                         <Github size={15} strokeWidth={1.8} />
                         GitHub
                       </a>
+
                       {project.demo && (
                         <a
                           href={project.demo}
