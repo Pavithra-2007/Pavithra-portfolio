@@ -127,13 +127,14 @@ export const projects = [
     demo: 'https://resume-analyser-67srvytehvvpsttzjmkbzz.streamlit.app/',
   },
   {
-    title: 'Visitors Management System',
-    description:
-      'A digital front-desk system for institutions to log, approve, and track visitor entries — replacing paper registers with a searchable, auditable record.',
-    stack: ['React', 'JavaScript', 'Oracle'],
-    github: 'https://github.com/Pavithra-2007',
-    demo: '',
-  },
+  title: 'Quickselect Algorithm Visualization',
+  image:'/quick-algo.png',
+  description:
+    'An interactive visualization of the Quickselect algorithm that demonstrates how the median is found efficiently using the divide-and-conquer approach, with animated step-by-step execution and partitioning.',
+  stack: ['HTML', 'CSS', 'JavaScript'],
+  github: 'https://github.com/Pavithra-2007',
+  demo: 'https://median-finder-using-decrease-and-co.vercel.app/',
+},
   {
     title: 'Model ATM',
     image: '/atm.png',
