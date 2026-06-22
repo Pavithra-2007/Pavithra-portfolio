@@ -162,8 +162,9 @@ export const certificates = [
     year: '2026',
   },
   {
-    title: 'React Basics Certificate',
-    issuer: 'Meta',
+    title: 'MATLAB Onramp',
+    image:'/matlab.png',
+    issuer: 'MATLAB',
     year: '2025',
   },
   {
