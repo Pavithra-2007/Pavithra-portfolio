@@ -135,6 +135,7 @@ export const projects = [
   },
   {
     title: 'Model ATM',
+    image: '/atm.png',
     description:
       'A simulated ATM application demonstrating secure transaction flows, balance management, and PIN-based authentication logic.',
     stack: ['Java', 'OOP'],
