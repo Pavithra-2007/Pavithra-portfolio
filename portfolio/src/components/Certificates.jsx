@@ -38,12 +38,7 @@ export default function Certificates() {
                              opacity-0 transition-all duration-300 group-hover:opacity-100
                              group-hover:bg-ink/55"
                 >
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-ink">
-                    <Eye size={18} strokeWidth={1.8} />
-                  </span>
-                  <span className="text-white text-[13px] font-semibold">
-                  
-                  </span>
+                
                 </div>
 
                 {/* BOTTOM INFO */}
