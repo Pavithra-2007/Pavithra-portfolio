@@ -96,7 +96,7 @@ export default function Hero() {
                 style={{ borderRadius: '38% 62% 63% 37% / 41% 44% 56% 59%' }}
               >
                 <img
-                  src="/profile.jpeg"
+                  src="/profile.png"
                   alt={profile.name}
                   onError={(e) => {
                     e.currentTarget.style.display = 'none'
