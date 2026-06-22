@@ -22,23 +22,38 @@ export default function Certificates() {
                 className="group relative shrink-0 snap-start w-[280px] md:w-[340px] aspect-[4/3] rounded-2xl
                            overflow-hidden bg-white border border-line"
               >
-                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-white to-mist">
-                  <span className="font-display text-2xl font-bold text-ink/10 select-none">
-                    {cert.title}
-                  </span>
+                {/* IMAGE */}
+                <div className="absolute inset-0">
+                  <img
+                    src={cert.image}
+                    alt={cert.title}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-ink/30" />
                 </div>
+
+                {/* HOVER OVERLAY */}
                 <div
-                  className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-ink/0
-                             opacity-0 transition-all duration-300 group-hover:bg-ink/55 group-hover:opacity-100"
+                  className="absolute inset-0 flex flex-col items-center justify-center gap-3 
+                             opacity-0 transition-all duration-300 group-hover:opacity-100
+                             group-hover:bg-ink/55"
                 >
                   <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-ink">
                     <Eye size={18} strokeWidth={1.8} />
                   </span>
-                  <span className="text-white text-[13px] font-semibold">View certificate</span>
+                  <span className="text-white text-[13px] font-semibold">
+                    View certificate
+                  </span>
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 bg-white/0">
-                  <p className="text-[14px] font-semibold text-ink">{cert.issuer}</p>
-                  <p className="text-[12.5px] text-slate">{cert.year}</p>
+
+                {/* BOTTOM INFO */}
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent">
+                  <p className="text-[14px] font-semibold text-white">
+                    {cert.issuer}
+                  </p>
+                  <p className="text-[12.5px] text-white/80">
+                    {cert.year}
+                  </p>
                 </div>
               </div>
             ))}
