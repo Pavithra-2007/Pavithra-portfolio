@@ -42,7 +42,7 @@ export default function Certificates() {
                     <Eye size={18} strokeWidth={1.8} />
                   </span>
                   <span className="text-white text-[13px] font-semibold">
-                    View certificate
+                  
                   </span>
                 </div>
 
